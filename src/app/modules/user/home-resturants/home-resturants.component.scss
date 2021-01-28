@@ -1,0 +1,81 @@
+.contenedor{
+   
+    background-image: url("/assets/imgs/fondoRest.jpeg");
+  
+}
+.card{
+    margin:15px;
+    border-color: #850714;
+    
+    background-color: whitesmoke;
+    border-width: 3px;
+    border-radius: 10px;
+    width: 24rem;
+    
+    
+}
+ngb-rating {
+    font-size: 100px;
+    color:rgba(253, 253, 46, 0.986);
+    background: rgba(139, 5, 16, 0.815);
+  }
+
+.card-link{
+    color: #082d03;
+}
+.card-subtitle{
+    color: black;
+}
+
+@media (max-width:800px){
+    .contenedor{
+   
+        background-image: url("/assets/imgs/fondoRest.jpeg");
+        width: auto;
+      
+    }
+    
+}
+
+
+@media (max-width:1130px){
+    .contenedor{
+   
+        background-image: url("/assets/imgs/fondoRest.jpeg");
+        width: auto;
+        background-size: 1000px 
+                        1000px;
+      
+    }
+
+}
+
+@media (max-width:500px){
+    .contenedor{
+   
+        background-image: url("/assets/imgs/fondoRest.jpeg");
+        width: auto;
+        background-size: 500px 
+                        500px;
+      
+    }
+    
+   
+
+}
+
+@media (max-height:900px){
+    .contenedor{
+   
+        background-image: url("/assets/imgs/fondoRest.jpeg");
+        width: auto;
+        background-size: 900px 
+                        900px;
+
+    }
+
+}
+
+
+
+

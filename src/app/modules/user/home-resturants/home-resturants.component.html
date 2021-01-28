@@ -1,0 +1,35 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="contenedor">
+            <!-- SINGLE-->
+    <div class="row">
+        <div class="col" *ngFor="let restaurante of restaurantes" >
+            <div class="card " style="">
+                <div class="card-body">
+                    <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                    <p>Rate:{{ restaurante.rating }} </p>
+                    <h5 class="card-title">{{ restaurante.name }}</h5>                     
+                    <h6 class="card-subtitle mb-2 text-muted">Contacto</h6>
+                    <a>sitio: {{ restaurante.contact.site }}</a>
+                    <br>
+                    <a>email: {{ restaurante.contact.email }}</a>
+                    <br>
+                    <a>telefono: {{ restaurante.contact.phone }}</a>
+                    <br>
+                    <p class="card-text">Direccion:</p>
+                    <a>calle:{{ restaurante.address.street }}</a>
+                    <br>
+                    <a> Ciudad:{{ restaurante.address.city }}</a>
+                    <br>
+                    <a> Estado:{{ restaurante.address.state }}</a>
+                    <br>
+                        
+                    <a href="#" class="card-link">Ver mapa</a>
+                    <a ng-href="#{{ restaurante.contact.site }}" class="card-link">Facebook</a>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+    
+</div>
+
